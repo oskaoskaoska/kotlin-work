@@ -4,11 +4,13 @@ import kotlin.io.path.Path
 import kotlin.io.path.useLines
 
 fun main(args: Array<String>) {
+    // Check if a file path was provided
     if (args.size != 1) {
         println("Please provide a file path")
         exitProcess(1)
     }
 
+    // Get file path from command line and set variables
     val filePath = args[0]
     var longestLength = 0
     var lineNumber = 0
